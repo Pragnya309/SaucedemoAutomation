@@ -15,8 +15,9 @@ public class CheckoutPage {
 	By zip = By.id("postal-code");
 	By continueBtn = By.id("continue");
 	By finishBtn = By.id("finish");
-	public void completeCheckout() {
+	public void completeCheckout() throws InterruptedException {
 		driver.findElement(checkout).click();
+		Thread.sleep(2000);
 		driver.findElement(firstname).sendKeys("Test");
 		driver.findElement(lastname).sendKeys("User");
 		driver.findElement(zip).sendKeys("500053");
