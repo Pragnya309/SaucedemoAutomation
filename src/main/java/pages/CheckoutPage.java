@@ -17,7 +17,7 @@ public class CheckoutPage {
 	By finishBtn = By.id("finish");
 	public void completeCheckout() throws InterruptedException {
 		driver.findElement(checkout).click();
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		driver.findElement(firstname).sendKeys("Test");
 		driver.findElement(lastname).sendKeys("User");
 		driver.findElement(zip).sendKeys("500053");
